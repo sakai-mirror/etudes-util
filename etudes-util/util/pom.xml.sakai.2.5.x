@@ -33,20 +33,64 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<name>etudes-util-api</name>
+	<name>etudes-util</name>
 	<groupId>org.etudes.util</groupId>
-	<artifactId>etudes-util-api</artifactId>
+	<artifactId>etudes-util</artifactId>
 	<packaging>jar</packaging>
-	
-	<properties>
-		<deploy.target>shared</deploy.target>
-	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-authz-api</artifactId>
+			<version>${sakai.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-component-api</artifactId>
+			<version>${sakai.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-entity-api</artifactId>
+			<version>${sakai.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-content-api</artifactId>
+			<version>${sakai.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-util-api</artifactId>
+			<version>${sakai.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sakaiproject</groupId>
+			<artifactId>sakai-util</artifactId>
+			<version>${sakai.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.etudes.util</groupId>
+			<artifactId>etudes-util-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
-	
 	<build>
+	
 		<sourceDirectory>src/java</sourceDirectory>
+	
 	</build>
 
 </project>
